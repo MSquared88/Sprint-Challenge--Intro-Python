@@ -46,7 +46,7 @@ def cityreader(cities=[]):
 	# For each city record, create a new City instance and add it to the  `cities` list
     for i in city_vals:
         if i[0] != "city":
-            cities.append(City(i[0], i[1], i[2]))
+            cities.append(City(i[0], float(i[1]), float(i[2])))
 
     # cities.append([City(i[0], i[1], i[2]) for i in city_vals if i[0] != "city"])
 
